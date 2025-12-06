@@ -15,9 +15,4 @@
     <ProjectReference Include="..\VideoGameCatalogue.Core\VideoGameCatalogue.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
