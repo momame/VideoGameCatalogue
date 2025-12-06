@@ -77,6 +77,7 @@ public class VideoGameDbContext : DbContext
 
     /// <summary>
     /// Seeds initial video game data for demonstration purposes.
+    /// Using static DateTime values to avoid migration warnings.
     /// In production, would use migrations for data seeding or separate seed script.
     /// Provides diverse examples across different genres and price points.
     /// </summary>
@@ -93,7 +94,7 @@ public class VideoGameDbContext : DbContext
                 Rating = 9.7m,
                 Price = 59.99m,
                 Description = "Explore a vast open world in this critically acclaimed adventure game.",
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)  // Static date
             },
             new VideoGame
             {
@@ -105,7 +106,7 @@ public class VideoGameDbContext : DbContext
                 Rating = 9.5m,
                 Price = 49.99m,
                 Description = "Kratos and his son Atreus embark on a perilous journey through Norse mythology.",
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)  // Static date
             },
             new VideoGame
             {
@@ -117,7 +118,7 @@ public class VideoGameDbContext : DbContext
                 Rating = 9.3m,
                 Price = 59.99m,
                 Description = "A challenging action RPG set in a vast fantasy world created by FromSoftware and George R.R. Martin.",
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)  // Static date
             },
             new VideoGame
             {
@@ -129,7 +130,7 @@ public class VideoGameDbContext : DbContext
                 Rating = 8.2m,
                 Price = 69.99m,
                 Description = "The latest installment in the popular soccer simulation series with enhanced gameplay.",
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)  // Static date
             },
             new VideoGame
             {
@@ -141,7 +142,7 @@ public class VideoGameDbContext : DbContext
                 Rating = 8.5m,
                 Price = 39.99m,
                 Description = "An open-world action-adventure RPG set in the dystopian Night City.",
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)  // Static date
             },
             new VideoGame
             {
@@ -153,7 +154,7 @@ public class VideoGameDbContext : DbContext
                 Rating = 9.0m,
                 Price = 24.99m,
                 Description = "A rogue-like dungeon crawler where you defy the god of death as you hack and slash out of the Underworld.",
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)  // Static date
             }
         );
     }
