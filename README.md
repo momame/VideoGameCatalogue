@@ -1,6 +1,8 @@
 ﻿# Video Game Catalogue
 
 A full-stack web application for managing a video game catalogue with CRUD operations. Built with ASP.NET Core Web API backend and Angular frontend.
+<img width="1677" height="1087" alt="image" src="https://github.com/user-attachments/assets/97851b51-1fe4-4e52-bd10-bb5d19bbb291" />
+
 
 ## 🎮 Features
 
