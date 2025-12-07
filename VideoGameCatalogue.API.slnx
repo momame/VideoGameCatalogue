@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
   <Project Path="VideoGameCatalogue.API/VideoGameCatalogue.API.csproj" />
   <Project Path="VideoGameCatalogue.Core/VideoGameCatalogue.Core.csproj" />
   <Project Path="VideoGameCatalogue.Infrastructure/VideoGameCatalogue.Infrastructure.csproj" />
