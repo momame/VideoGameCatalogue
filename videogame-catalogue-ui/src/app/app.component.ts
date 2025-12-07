@@ -1,24 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { VideoGameService } from './services/video-game';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule, RouterOutlet, RouterLink],
+  template: `
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" routerLink="/games">Video Game Catalogue</a>
+      </div>
+    </nav>
+    
+    <div class="container mt-4">
+      <router-outlet></router-outlet>
+    </div>
+  `,
+  styles: []
 })
-export class AppComponent implements OnInit {
-  title = 'videogame-catalogue-ui';
-
-  constructor(private videoGameService: VideoGameService) { }
-
-  ngOnInit() {
-    // Test API call - check browser console
-    this.videoGameService.getAll().subscribe({
-      next: (games) => console.log('Games from API:', games),
-      error: (err) => console.error('Error:', err)
-    });
-  }
+export class AppComponent {
+  title = 'Video Game Catalogue';
 }

@@ -155,6 +155,127 @@ public class VideoGameDbContext : DbContext
                 Price = 24.99m,
                 Description = "A rogue-like dungeon crawler where you defy the god of death as you hack and slash out of the Underworld.",
                 CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)  // Static date
+            },
+
+            new VideoGame
+            {
+                Id = 7,
+                Title = "Red Dead Redemption 2",
+                Genre = "Action-Adventure",
+                ReleaseDate = new DateTime(2018, 10, 26),
+                Publisher = "Rockstar Games",
+                Rating = 9.7m,
+                Price = 59.99m,
+                Description = "An epic tale of life in America's unforgiving heartland with stunning visuals and deep storytelling.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 8,
+                Title = "The Witcher 3: Wild Hunt",
+                Genre = "RPG",
+                ReleaseDate = new DateTime(2015, 5, 19),
+                Publisher = "CD Projekt",
+                Rating = 9.8m,
+                Price = 39.99m,
+                Description = "Play as Geralt of Rivia in this award-winning open-world RPG with deep story and choices that matter.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 9,
+                Title = "Minecraft",
+                Genre = "Sandbox",
+                ReleaseDate = new DateTime(2011, 11, 18),
+                Publisher = "Mojang Studios",
+                Rating = 9.0m,
+                Price = 26.95m,
+                Description = "Build, explore, and survive in an infinite procedurally generated world made of blocks.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 10,
+                Title = "Grand Theft Auto V",
+                Genre = "Action-Adventure",
+                ReleaseDate = new DateTime(2013, 9, 17),
+                Publisher = "Rockstar Games",
+                Rating = 9.5m,
+                Price = 29.99m,
+                Description = "Experience the story of three criminals in the sprawling city of Los Santos.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 11,
+                Title = "Baldur's Gate 3",
+                Genre = "RPG",
+                ReleaseDate = new DateTime(2023, 8, 3),
+                Publisher = "Larian Studios",
+                Rating = 9.6m,
+                Price = 59.99m,
+                Description = "A next-generation RPG set in the Dungeons & Dragons universe with deep character customization.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 12,
+                Title = "Hollow Knight",
+                Genre = "Metroidvania",
+                ReleaseDate = new DateTime(2017, 2, 24),
+                Publisher = "Team Cherry",
+                Rating = 9.2m,
+                Price = 14.99m,
+                Description = "A challenging 2D action-adventure through a vast interconnected underground kingdom.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 13,
+                Title = "Stardew Valley",
+                Genre = "Simulation",
+                ReleaseDate = new DateTime(2016, 2, 26),
+                Publisher = "ConcernedApe",
+                Rating = 9.1m,
+                Price = 14.99m,
+                Description = "Escape to the countryside and create the farm of your dreams in this relaxing simulation.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 14,
+                Title = "Doom Eternal",
+                Genre = "FPS",
+                ReleaseDate = new DateTime(2020, 3, 20),
+                Publisher = "id Software",
+                Rating = 8.8m,
+                Price = 39.99m,
+                Description = "Rip and tear through demons in this intense first-person shooter with brutal combat.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 15,
+                Title = "Animal Crossing: New Horizons",
+                Genre = "Simulation",
+                ReleaseDate = new DateTime(2020, 3, 20),
+                Publisher = "Nintendo",
+                Rating = 9.0m,
+                Price = 59.99m,
+                Description = "Escape to a deserted island and create your own paradise in this relaxing life sim.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new VideoGame
+            {
+                Id = 16,
+                Title = "Spider-Man: Miles Morales",
+                Genre = "Action-Adventure",
+                ReleaseDate = new DateTime(2020, 11, 12),
+                Publisher = "Sony Interactive Entertainment",
+                Rating = 8.9m,
+                Price = 49.99m,
+                Description = "Swing through New York City as Miles Morales with unique powers and abilities.",
+                CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
             }
         );
     }
