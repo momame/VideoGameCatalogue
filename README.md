@@ -821,15 +821,6 @@ This project is provided as-is for educational and demonstration purposes.
 
 ---
 
-## 👤 Author
-
-**Matt Mehrpak**
-- GitHub: [@momame](https://github.com/momame)
-- Email: mehrpak.ie@gmail.com
-- LinkedIn: [linkedin.com/in/mehr](https://linkedin.com/in/mehr)
-
----
-
 ## 🎓 Learning Resources
 
 ### Backend Resources
