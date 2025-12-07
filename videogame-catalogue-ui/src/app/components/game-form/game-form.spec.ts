@@ -1,18 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
+import { of } from 'rxjs';
+import { GameFormComponent } from './game-form';
 
-import { GameForm } from './game-form';
-
-describe('GameForm', () => {
-  let component: GameForm;
-  let fixture: ComponentFixture<GameForm>;
+describe('GameFormComponent', () => {
+  let component: GameFormComponent;
+  let fixture: ComponentFixture<GameFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GameForm]
-    })
-    .compileComponents();
+      imports: [GameFormComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: { params: of({ id: '1' }) }
+        }
+      ]
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(GameForm);
+    fixture = TestBed.createComponent(GameFormComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

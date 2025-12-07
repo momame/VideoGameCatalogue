@@ -1,18 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { GameList } from './game-list';
+import { ActivatedRoute } from '@angular/router';
+import { of } from 'rxjs';
+import { GameListComponent } from './game-list';
 
 describe('GameList', () => {
-  let component: GameList;
-  let fixture: ComponentFixture<GameList>;
+  let component: GameListComponent;
+  let fixture: ComponentFixture<GameListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GameList]
-    })
-    .compileComponents();
+      imports: [GameListComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: { snapshot: { params: {} } }
+        }
+      ]
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(GameList);
+    fixture = TestBed.createComponent(GameListComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
